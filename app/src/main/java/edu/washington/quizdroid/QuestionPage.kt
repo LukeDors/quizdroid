@@ -34,7 +34,7 @@ class QuestionPage : AppCompatActivity() {
 
     fun startQuiz(view: View) {
         val intent = Intent(this, Quiz::class.java).apply {
-            putExtra(QUIZ_TITLE, title)
+            putExtra(QUIZ_TITLE, intent.getStringExtra(OVERVIEW_TITLE))
         }
         startActivity(intent)
     }

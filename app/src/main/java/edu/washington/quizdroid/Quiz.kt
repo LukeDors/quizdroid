@@ -21,16 +21,14 @@ class Quiz : AppCompatActivity() {
 
         val finish = findViewById<Button>(R.id.finish)
         val next = findViewById<Button>(R.id.next)
+        val title = intent.getStringExtra(QUIZ_TITLE)
         Log.d("title is", title.toString())
-        next.isEnabled = false
-        next.isClickable = false
         finish.visibility = View.INVISIBLE
         var count = 1
         var correct = 0
         val summary = findViewById<TextView>(R.id.summary)
         summary.visibility = View.INVISIBLE
         val quizTime = findViewById<TextView>(R.id.quizTime)
-        val title = intent.getStringExtra(QUIZ_TITLE)
         quizTime.setText(title)
         var options = emptyArray<Int>()
         var answers = emptyArray<Int>()
@@ -70,7 +68,6 @@ class Quiz : AppCompatActivity() {
                 R.string.marvelA11,
                 R.string.marvelA13
             )
-
         }
         summary.setText(questions[questionIndex])
         var index1 = 0
@@ -92,7 +89,7 @@ class Quiz : AppCompatActivity() {
                 next.isEnabled = true
             }
             count += 1
-            if (count == 10) {
+            if (count == 9) {
                 next.visibility = View.INVISIBLE
                 next.isEnabled = false
                 finish.visibility = View.VISIBLE
@@ -100,16 +97,16 @@ class Quiz : AppCompatActivity() {
             }
             if ((count % 2) == 1) {
                 //answer screen
-                next.setText(R.string.submit)
+                next.setText(R.string.next)
                 summary.setText(questions[questionIndex])
             } else {
                 //question screen
-                next.setText(R.string.next)
+                next.setText(R.string.submit)
                 questionIndex += 1
                 index1 += 3
                 index2 += 3
                 index3 += 3
-                summary.setText(R.string.correct + answers[questionIndex])
+                summary.setText(R.string.correct)
                 var id = findViewById<RadioButton>(group.checkedRadioButtonId)
                 var answer = id.text
                 if (answer == getString(questions[questionIndex])) {
