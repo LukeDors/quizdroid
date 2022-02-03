@@ -1,12 +1,92 @@
 <resources>
-    <string name="app_name">quizdroid</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="app_name">QuizDroid</string>
+    <string name="physics">Physics</string>
+    <string name="math">Math</string>
+    <string name="marvel">Marvel Superheroes</string>
+    <string name="topicTitle">Topic Overview</string>
+    <string name="returnHome">Return to Home</string>
+    <string name="temp">temp</string>
+    <string name="begin">begin</string>
+    <string name="physicsOverview">This set of 5 questions will test your basic physics knowledge, high school level and below</string>
+    <string name="mathOverview">This set of 5 questions will test your math skills, from algebra 2 and below</string>
+    <string name="marvelOverview">This set of 5 questions about Marvel superheroes will help you find out if you are a TRUE comic book nerd</string>
+    <string name="physicsQ1">What is the SI Unit for mass?</string>
+    <string name="physicsQ2">What physicist is famous for their cat?</string>
+    <string name="physicsQ3">What are the names for Isaac Newton\'s three most famous physics laws?</string>
+    <string name="physicsQ4">What is the SI Unit for heat?</string>
+    <string name="physicsQ5">Approximately how long does it take for light to travel to the Earth?</string>
+    <string name="mathQ1">What is the sum of the interior angles of a triangle?</string>
+    <string name="mathQ2">How many sides does a nonagon have?</string>
+    <string name="mathQ3">Which two values give distance when multiplied together?</string>
+    <string name="mathQ4">Which of these would give the angle on a given right triangle after dividing the length of the side opposite the angle and the hypotenuse?</string>
+    <string name="mathQ5">What is the commonly used name for base two?</string>
+    <string name="marvelQ1">What member of the X-men famously has bones made of adamantium?</string>
+    <string name="marvelQ2">Which of these were a member of the Avengers?</string>
+    <string name="marvelQ3">Who was the most common villain who fought the Fantastic Four?</string>
+    <string name="marvelQ4">Which of these heroes is the oldest?</string>
+    <string name="marvelQ5">What was the name of Peter Parker\'s late uncle?</string>
+    <string name="physicsA1">Pounds</string>
+    <string name="physicsA2">Kilograms</string>
+    <string name="physicsA3">Weight</string>
+    <string name="physicsA4">Isaac Newton</string>
+    <string name="physicsA5">Albert Einstein</string>
+    <string name="physicsA6">Erwin Schrodinger</string>
+    <string name="physicsA7">Laws of Motion</string>
+    <string name="physicsA8">Laws of Inertia</string>
+    <string name="physicsA9">Laws of Physics</string>
+    <string name="physicsA10">Joules</string>
+    <string name="physicsA11">Degrees</string>
+    <string name="physicsA12">Watts</string>
+    <string name="physicsA13">18 Minutes</string>
+    <string name="physicsA14">8 Minutes</string>
+    <string name="physicsA15">3 Minutes</string>
+    <string name="mathA1">360 Degrees</string>
+    <string name="mathA2">270 Degrees</string>
+    <string name="mathA3">180 Degrees</string>
+    <string name="mathA4">19</string>
+    <string name="mathA5">9</string>
+    <string name="mathA6">12</string>
+    <string name="mathA7">Time and Mass</string>
+    <string name="mathA8">Rate and Time</string>
+    <string name="mathA9">Rate and Velocity</string>
+    <string name="mathA10">Sin</string>
+    <string name="mathA11">Cos</string>
+    <string name="mathA12">Tan</string>
+    <string name="mathA13">Tertiary</string>
+    <string name="mathA14">Binary</string>
+    <string name="mathA15">Base 2</string>
+    <string name="marvelA1">Colossus</string>
+    <string name="marvelA2">Wolverine</string>
+    <string name="marvelA3">Cyclops</string>
+    <string name="marvelA4">Hawkeye</string>
+    <string name="marvelA5">Storm</string>
+    <string name="marvelA6">Jean Grey</string>
+    <string name="marvelA7">Dr. Strange</string>
+    <string name="marvelA8">Dr. Doom</string>
+    <string name="marvelA9">Thanos</string>
+    <string name="marvelA10">Tony Stark</string>
+    <string name="marvelA11">Captain America</string>
+    <string name="marvelA12">Professor X</string>
+    <string name="marvelA13">Ben</string>
+    <string name="marvelA14">Al</string>
+    <string name="marvelA15">Pete</string>
     <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+    <string name="submit">Submit</string>
+    <string name="correct">The correct answer is </string>
+    <string name="total">You have answered correctly: </string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
