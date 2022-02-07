@@ -27,7 +27,6 @@ class Quiz : AppCompatActivity() {
         var count = 1
         var correct = 0
         val summary = findViewById<TextView>(R.id.summary)
-        summary.visibility = View.INVISIBLE
         val quizTime = findViewById<TextView>(R.id.quizTime)
         quizTime.setText(title)
         var options = emptyArray<Int>()
@@ -97,21 +96,23 @@ class Quiz : AppCompatActivity() {
             }
             if ((count % 2) == 1) {
                 //answer screen
-                next.setText(R.string.next)
+                next.setText(R.string.submit)
                 summary.setText(questions[questionIndex])
             } else {
                 //question screen
-                next.setText(R.string.submit)
+                next.setText(R.string.next)
                 questionIndex += 1
                 index1 += 3
                 index2 += 3
                 index3 += 3
-                summary.setText(R.string.correct)
                 var id = findViewById<RadioButton>(group.checkedRadioButtonId)
                 var answer = id.text
-                if (answer == getString(questions[questionIndex])) {
+                Log.d("input", answer.toString())
+                Log.d("answer", getString(answers[questionIndex-1]))
+                if (answer == getString(answers[questionIndex-1])) {
                     correct += 1
                 }
+                summary.setText(correct.toString())
                 currentOptions = arrayOf(options[index1],options[index2],options[index3])
                 btn1.setText(currentOptions[0])
                 btn2.setText(currentOptions[1])
