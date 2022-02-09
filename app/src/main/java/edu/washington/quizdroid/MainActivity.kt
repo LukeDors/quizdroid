@@ -3,6 +3,7 @@ package edu.washington.quizdroid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.util.Log
 import android.view.View
 import android.widget.Button
 
@@ -17,9 +18,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val data = QuizApp.data
+        var topics = data.getTopics()
+
         physics = findViewById<Button>(R.id.physics)
+        physics.setText(topics[0].title)
         math = findViewById<Button>(R.id.math)
+        math.setText(topics[1].title)
         marvel = findViewById<Button>(R.id.marvel)
+        marvel.setText(topics[2].title)
     }
 
     fun overview(view: View) {
