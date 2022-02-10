@@ -17,13 +17,15 @@ class QuestionPage : AppCompatActivity() {
         val subtitle = findViewById<TextView>(R.id.subtitle).apply {
             text = title
         }
+        val data = QuizApp.data
+        var topics = data.getTopics()
         val overview = findViewById<TextView>(R.id.overview)
         if (title == "Physics") {
-            overview.text = getString(R.string.physicsOverview)
+            overview.text = topics[0].description
         } else if (title == "Math") {
-            overview.text = getString(R.string.mathOverview)
+            overview.text = topics[1].description
         } else if (title == "Marvel Superheroes") {
-            overview.text = getString(R.string.marvelOverview)
+            overview.text = topics[2].description
         }
     }
 
@@ -33,7 +35,7 @@ class QuestionPage : AppCompatActivity() {
     }
 
     fun startQuiz(view: View) {
-        val intent = Intent(this, QuestionPage::class.java).apply {
+        val intent = Intent(this, QuizPage::class.java).apply {
             putExtra(QUIZ_TITLE, intent.getStringExtra(OVERVIEW_TITLE))
         }
         startActivity(intent)

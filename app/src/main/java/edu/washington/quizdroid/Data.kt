@@ -1,11 +1,9 @@
 package edu.washington.quizdroid
 
-import android.os.Environment
 import android.util.Log
 import org.json.JSONArray
 import java.io.File
 import java.io.FileInputStream
-import java.io.FileOutputStream
 
 class Data : TopicRepository {
     private val topicList: MutableList<Topic> = mutableListOf()
