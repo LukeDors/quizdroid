@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.washington.quizdroid">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+>>>>>>> Stashed changes
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +15,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizdroid">
+        android:theme="@style/Theme.Quizdroid"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".Quiz"
+            android:name=".PrefsPage"
+            android:exported="false" />
+        <activity
+            android:name=".QuizPage"
             android:exported="false" />
         <activity
             android:name=".QuestionPage"

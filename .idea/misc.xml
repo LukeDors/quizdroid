@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/skywa/Documents/GitHub/quizdroid/app/src/main/res/layout/action_bar.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/skywa/Documents/GitHub/quizdroid/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/skywa/Documents/GitHub/quizdroid/app/src/main/res/layout/activity_prefs_page.xml" value="0.2391304347826087" />
         <entry key="..\:/Users/skywa/Documents/GitHub/quizdroid/app/src/main/res/layout/activity_question_page.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/skywa/Documents/GitHub/quizdroid/app/src/main/res/layout/activity_quiz.xml" value="0.176" />
       </map>
